@@ -7,7 +7,17 @@ use Livewire\Component;
 class Contador extends Component
 {
 
-    public $numero = 3;
+    public $numero = 0;
+
+    public function aumentar()
+    {
+        $this->numero++;
+    }
+
+    public function decrementar()
+    {
+        $this->numero--;
+    }
 
     public function render()
     {
