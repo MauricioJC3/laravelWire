@@ -10,6 +10,10 @@ Route::get('/componente-prueba', function () {
  return view("prueba");  
 });
 
+Route::get('/livewire-componente', function(){
+    return view('livewire');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
