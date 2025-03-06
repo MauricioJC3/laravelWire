@@ -9,5 +9,7 @@
     
     @livewire('suma')
 
+    @livewire()
+
 </body>
 </html>

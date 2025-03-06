@@ -9,4 +9,15 @@
     <br>
     <br>
     <h2>El resultado de la suma es: <span style="color: aqua;">{{ $respuesta }}</span></h2>
+
+
+
+    <input type="text" wire:model="a">
+    <br>
+    <input type="text" wire:model="b">
+    <br>
+    <button wire:click="multiplicacion">Multiplicar</button>
+    <br>
+    <h2>El resultado de la suma es: <span>{{ $res }}</span> </h2>
+
 </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Prueba;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,9 +11,8 @@ Route::get('/componente-prueba', function () {
  return view("prueba");  
 });
 
-Route::get('/livewire-componente', function(){
-    return view('livewire');
-});
+
+
 
 Route::middleware([
     'auth:sanctum',
@@ -23,3 +23,11 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('/livewire-componente', function(){
+    return view('livewire');
+});
+
+Route::get('livewire', Prueba::class);
+
+
